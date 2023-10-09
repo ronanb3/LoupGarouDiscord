@@ -56,9 +56,9 @@ def autres_loup(dico,loup):
 # Set the confirmation message when the bot is ready
 @bot.event
 async def on_ready():
-    ver = "1.3.0"
+    ver = "1.1.0"
     lang = "fr"
-    print("NextBot " + ver + " " + lang)
+    print("LoupGarouBot " + ver + " " + lang)
 
 # Set the commands for your bot
 @bot.command()
@@ -115,7 +115,7 @@ async def voyante(ctx):
                 )
             ]
         )
-        
+
         async def select_callback(self, select, interaction): # the function called when the user is done selecting options
             await interaction.response.send_message(f"Awesome! I like {select.values[0]} too!")
 
